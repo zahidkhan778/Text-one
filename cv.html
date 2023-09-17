@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            background-color: brown;
+        }
+
+        header {
+            padding-left: 50px;
+            height: 6vh;
+            width: 90vw;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ulist {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            margin: 25px;
+        }
+
+        .list {
+            display: inline-block;
+            padding-left: 25px;
+        }
+
+        .nav-h1 {
+            color: white;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            justify-content: center;
+            padding-top: 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 20px;
+            border-bottom: 1px dotted black;
+            transition: 0.6s ease;
+        }
+
+        ul li a.active {
+            background-color: gray;
+            color: black;
+        }
+
+        ul li a:hover {
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+        }
+        main {
+            margin-top: 10vh;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <h1 class="nav-h1">MY-GITHUB</h1>
+            <ul class="ulist">
+                <li class="list"><a class="active" href="index.html">Home</a< /li>
+                <li class="list"><a target="_blank" href="github.html">GitHub</a></li>
+                <li class="list"><a target="_blank" href="cv.html">Resume</a></li>
+            </ul>
+        </nav>
+        <hr bdcolor="black">
+    </header>
+
+    <main>
+        <center><img src="Assets/profile.jpg" alt="my-profile" width="150px" height="150px"></center>
+        <h1>Muhammad Zahid</h1>
+        <h3>Pakistani Chowk ,ichra</h3>
+        <h4>Lahore, Punjab</h4>
+        <h5>54000</h5>
+    
+        <hr bgcolor="white">
+    
+        <h2 align="center">About Me</h2>
+        <p>The website is easy to navigate, and downloading the templates is simple. Just browse through the collection of
+            resume word templates and cover letter word templates, choose the one you like, and download it for free. With
+            the templates, you can save time and effort while creating a document that will impress potential employers.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, earum inventore! Cum laboriosam vitae impedit
+            illum mollitia possimus nisi accusantium? Suscipit quibusdam molestiae nisi est voluptates commodi ut corrupti
+            explicabo.
+        </p>
+    
+        <hr bgcolor="white">
+    
+        <h1>Hobbies</h1>
+        <ul>
+            <li>Coding</li>
+            <li>Playing Games</li>
+            <li>Reading Books</li>
+        </ul>
+    
+        <h1>Skills</h1>
+    
+        <ol>
+            <li>HTML</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+        </ol>
+    
+        <hr bgcolor="white">
+    
+        <p>You can visit my Github <a href="https://github.com/zahidkhan778">Click Here</a></p>
+        <p>&copy; All rights are reserved</p>
+    </main>
+    
+</body>
+</html>

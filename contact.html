@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: pink;
+        }
+
+        header{
+            background-color: gray;
+            padding: 20px 0;
+            height: 10vh;
+            width: 40vw;
+            margin-left: 30%;
+            border-radius: 35px;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: black;
+            
+        }
+        h1 , p{
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+
+        .table {
+            background-color: red;
+            width: 40vw;
+            margin-left: 30%;
+            border-radius: 35px;
+        }
+
+        form {
+            padding: 30px 60px;
+        }
+
+        .name {
+            color: white;
+            padding-bottom: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .input {
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            padding: 3px 3px;
+        }
+
+        select {
+            width: 100%;
+            height: 25px;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .gender {
+            color: wheat;
+            padding-left: 10px;
+        }
+
+        .file {
+            color: white;
+            padding-top: 10px;
+        }
+
+        .text1 {
+            color: white;
+        }
+
+        .text {
+            padding-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 70px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            float: right;
+            padding: 8px 8px;
+            border-radius: 20px;
+            border: 2px solid white;
+            font-weight: bold;
+            background-color: pink;
+            transition: 0.5s ease-in;
+        }
+
+        .btn:hover {
+            background-color: brown;
+            color: white;
+            border: 2px solid gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Here is A survey Form</h1>
+        <p>You can provide your details Here</p>
+    </header>
+
+    <div class="table">
+        <form action="tnx.html">
+            <label class="details"><span class="name">Name*</span> <br>
+                <input class="input" type="text" required placeholder="Enter Your Name">
+            </label><br><br>
+            <label class="details"><span class="name">Email*</span> <br>
+                <input class="input" type="email" required placeholder="Enter Your Email">
+            </label><br><br>
+            <label class="details"><span class="name">Age (Optional)</span> <br>
+                <input class="input" type="date" placeholder="Age">
+            </label> <br> <br>
+
+            <label class="details">
+                <span class="name slt-spn">What is Your Current Position</span> <br> <br>
+                <select>
+                    <option selected>Student</option>
+                    <option>Selft-Employee</option>
+                    <option>Businesman</option>
+                    <option>Worker</option>
+                    <option>Owner</option>
+                </select>
+            </label> <br><br>
+
+            <label class="details"><span class="name">What is Your Gender</span> <br> <br>
+                <input type="radio" name="gender"> <span class="gender">Male</span><br>
+                <input type="radio" name="gender"> <span class="gender">Female</span><br>
+                <input type="radio" name="gender"> <span class="gender">TransGender</span>
+            </label> <br> <br>
+
+            <label class="details"><span class="name">Choose Your Hobbies</span> <br> <br>
+                <input type="checkbox"> <span class="gender">Reading</span><br>
+                <input type="checkbox"> <span class="gender">Coding</span><br>
+                <input type="checkbox"> <span class="gender">Sleeping</span><br>
+                <input type="checkbox"> <span class="gender">Eating</span><br>
+                <input type="checkbox"> <span class="gender">Gym</span><br>
+            </label> <br>
+
+            <label class="details">
+                <span class="name">Upload Your recent Picture</span> <br>
+                <input class="file" type="file">
+            </label> <br> <br>
+
+            <label class="text1">
+                <span class="text">
+                    Drop here your suggestions and Comments
+                </span> <br> <br>
+                <textarea required cols="70" rows="10"></textarea>
+            </label> <br><br>
+
+            <input class="btn" type="submit" value="SUBMIT FORM">
+            <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
